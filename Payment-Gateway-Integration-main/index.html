@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===============Box Icons=============== -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--================CSS==================-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Spark Foundation</title>
+
+</head>
+
+<body onload="myFunction()">
+
+    <div id="loading"></div>
+    <!-- ----Scroll Top----- -->
+    <a href="#" class="scrolltop " id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop_icon'></i>
+    </a>
+    <!-- =======HEADER============= -->
+    <header class="l-header scroll-header" id="header">
+        <nav class="nav bd container">
+            <a href="#" class="nav_logo">Helphand Carity</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list ">
+                    <li class="nav_item"><a href="#home" class="nav_link active-link">Home</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="#services" class="nav_link">Events</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">Contact US</a></li>
+                    <!--li class="nav_item"><a href="#menu" class="nav_link">Menu</a></li>-->
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+
+                </ul>
+            </div>
+
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main">
+        <!-- --------- HOME ---------- -->
+        <section class="home" id="home" style="background-image: url(./img/backimg1.jpg);">
+            
+            <div class="home__container bd-container bd-grid">
+                
+                <div class="home__data">
+                    <h1 class="home__title">CHARITY DONATION</h1>
+                    <h2 class="home__subtitle">WE MAKE A LIVING BY WHAT WE GET
+                        <br>WE MAKE A LIFE BY WHAT WE GIVE .
+                    </h2>
+                    <!--button class="btn">Donate Now</button> -->
+                    <!--a href=" " class="button">
+                    <button type="button">Donate Now</button>
+                </a>-->
+                    <!--<form><script src="https://checkout.razorpay.com/v1/payment-button.js"
+                 data-payment_button_id="pl_HJKyuveTewGX0z" async > 
+                </script> 
+                </form> -->
+                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IY5RRxlozRjeM2" async> </script> </form>
+                </div>
+                <img src="./img/carity-icon.png" alt="" class="home__img">
+            </div>
+        </section>
+
+
+        <!--  ---------About US----------- -->
+        <section class="about section bd-container" id="about">
+            <div class="about__container bd-grid">
+                <div class="about__data">
+                    <span class="section-subtitle about__initial">About Us</span>
+                    <h2 class="section-title about__initial">The Helphand Carity<br></h2>
+                    <p class="about__description">The helphand carity is working to bring parity in education,
+                        making sure children have equal opportunity at success,
+                        irrespective of the financial background.</p>
+                    <a href="#" class="button">Explore History</a>
+                </div>
+                <img src="./img/About1.png" alt="" class="about__img">
+            </div>
+        </section>
+        <!-- -------------Events--------------- -->
+        <section class="services section bd-container" id="services">
+            <span class="section-subtitle">Our Services</span>
+            <h2 class="section-title">Working Events<br></h2>
+
+            <div class="services__container bd-grid">
+                <div class="services__content">
+                  
+                    <img src="./img/education.png" alt="">
+                    <h3 class="services__title">Education Fund</h3>
+                    <p class="services__description">We used technology to empower rural childs.
+                        We connect passionate volunteers across the globe,
+                        with childs from rural government schools across India,online.</p>
+                </div>
+                
+                
+                <div class="services__content">
+                   
+                    <img src="./img/house.png" alt="">
+                    <h3 class="services__title">Home Coordination</h3>
+                    <p class="services__description">Our goal is to avoid the mental and physical exhaustion
+                        often experienced by young spouse after a cancer diagnosis.</p>
+                 </div>
+
+
+                <div class="services__content">
+                  
+                    <img src="./img/covid.png" alt="">
+                    <h3 class="services__title">COVID 19 Relief Work</h3>
+                    <p class="services__description">We launched India COVID Response Fund-1 in January 2022
+                        raising funds from individuals, foundations & corporations.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------------- Contact Us--------------- -->
+        <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <h2 class="section-title contact__initial">Contact Us<br></h2>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">kunaljs2209@gmail.com</span>
+
+                        <h3 class="contact__subtitle">PHONE</h3>
+                        <span class="contact__text">7507626053</span>
+
+                        <h3 class="contact__subtitle">ADDRESS</h3>
+                        <span class="contact__text">Pune ,Maharashtra</span>
+                    </div>
+                </div>
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                    </div>
+
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                    <div id="bttn"> <input type="submit" value="Send" class="contact__button"></div>
+                </form>
+            </div>
+        </section>
+        <!--=========================================== CTA===================================================== -->
+        <section id="cta" class="contact section bd-container">
+            <div class="inner">
+                <header>
+                    <h2>Donate Now</h2>
+                    <p>“We must give more in order to get more. It is the <br>generous giving of ourselves that produces the
+                        generous harvest.” </p>
+                </header>
+                <ul class="actions stacked">
+                    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IY5RRxlozRjeM2" async> </script> </form>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========= footer ==========-->
+    <footer class="footer section bd-container">
+        <div class="footer__container">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">Handhelp Carity</a>
+                <div>
+                    <a href="#home" class="footer__social"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#home" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+
+            
+        </div>
+       
+    </footer>
+    <p class="footer__copy">© 2022 The Helphand Charity. All Rights Reserved Design by Kunal Shete</p>
+
+    <!-- ========= Scroll Reveal ======== -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+
+    <!-- ======= Main JS ======= -->
+    <script src="main.js"></script>
+</body>
+
+</html>
